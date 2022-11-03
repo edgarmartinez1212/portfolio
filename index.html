@@ -5,48 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar Martinez</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/styles/_normalize.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <!-- header -->
-    <!-- Edgar Martinez -->
-    <!-- navigation -->
-
-    <!-- about: this will be a short paragraph about me and has an image -->
-    <!-- work: 5 image place holders of future projects- homework1 link (first will be big) -->
-    <!-- contact info: github -->
-
-    <!-- footer: made by edgar martinezs -->
-
     <header>
-        <h1>Edgar Martinez</h1>
+        <h1><a href="#">
+                <div class="fname fullname">edgar</div>
+                <div class="lname fullname">martinez</div>
+            </a>
+        </h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li class="tabs about-tab">
+                    <a href="#about" class="items item-1">about</a>
+                </li>
+                <li class="tabs work-tab">
+                    <a href="#work" class="items item-2">work</a>
+                </li>
+                <li class="tabs contact-tab">
+                    <a href="#contact" class="items item-3">contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
-
     <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>i like computers</p>
+        <a href="#" class="top-button">top</a>
+        <section class="image">
+            <img src="./assets/images/glasses.jpg" alt="glasses homepage">
         </section>
-        <section id="work" class="pt">
-            <h2>Work</h2>
-            <h3>homework 1</h3>
-            <img src="https://via.placeholder.com/200" alt="horiseon website">
+
+        <section class="about" id="about">
+            <div class="about-title subheading">
+                <h2>about</h2>
+            </div>
+            <div class="about-image">
+                <img src="./assets/images/avatar.jpg" alt="default avatar">
+            </div>
+            <div class="about-text">
+                <p>Currently an IT User Support Specialist for Northwestern University Libraries with an interest in
+                    movies,
+                    music, and social events.
+                </p>
+                <p>
+                    After having been introduced to Web Development through a colleague, I decided to register for
+                    Northwestern University's Coding Bootcamp.
+                    Exepericing the world of programming and logic, I now have hopes of becoming a Web Developer.
+                </p>
+            </div>
         </section>
-        <section id="contact" class="pt">
-            <h2>Contact</h2>
-            <a href="">github</a>
+
+        <section class="work" id="work">
+            <div class="work-title subheading">
+                <h2>work</h2>
+            </div>
+            <div class="projects project-1">
+                <a href="https://edgarmartinez1212.github.io/challenge-1/" target="_blank">
+                    <img src="./assets/images/horiseon.png" alt="horiseon website">
+                </a>
+            </div>
+            <div class="projects project-2 coming-soon">
+                <p class="coming-soon-text">coming soon</p>
+            </div>
+            <div class="projects project-3 coming-soon">
+                <p class="coming-soon-text">coming soon</p>
+            </div>
+            <div class="projects project-4 coming-soon">
+                <p class="coming-soon-text">coming soon</p>
+            </div>
+            <div class="projects project-5 coming-soon">
+                <p class="coming-soon-text">coming soon</p>
+            </div>
+            <div class="projects project-6 coming-soon">
+                <p class="coming-soon-text">coming soon</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-title subheading">
+                <h2>contact</h2>
+            </div>
+            <div class="contact-icons">
+                <div class="github">
+                    <a href="https://github.com/edgarmartinez1212" target="_blank">
+                        <div class="icons github-icon">
+                            <img src="./assets/images/github.png" alt="github">
+                        </div>
+                    </a>
+                </div>
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/edgarmartinez9319/" target="_blank">
+                        <div class="icons linkedin-icon">
+                            <img src="./assets/images/linkedin.png" alt="linkedin">
+                        </div>
+                    </a>
+                </div>
+                <div class="email">
+                    <a href="mailto:edgar.martinez9319@gmail.com">
+                        <div class="icons email-icon">
+                            <img src="./assets/images/email.png" alt="email">
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
-        <div>Made by Edgar Martinez</div>
+        <p>made by edgar martinez 2022</p>
     </footer>
 </body>
 
