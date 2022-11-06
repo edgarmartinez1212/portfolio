@@ -13,7 +13,7 @@ header {
     margin: 20px;
     margin-bottom: 0;
 }
-header a { 
+header h1, header a { 
     text-decoration: none;
     color: white;
 	font-size: 40px;
@@ -21,10 +21,12 @@ header a {
 	-webkit-text-stroke: 2px black;
  }
 header h1 {
+    /* margin: 0;
+    width: 85vw; */
+}
+header h1  {
     margin: 0;
     width: 85vw;
-}
-header h1 a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -84,29 +86,39 @@ main {
 
 /*========= top button =========*/
 .top-button {
-    font-size: 1.5rem;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
+    /* font-size: 2rem; */
+    /* position: fixed; */
+    /* bottom: 20px; */
+    /* right: 20px; */
+
     height: 10vh;
-    width: 90px;
-    border-radius: 50%;
+    width: 10vh;
+    /* border-radius: 50%; */
     border: 1.5px solid black;
-    text-align: center;
+    
+    
+    
+
+
     /* line-height:  */
+
+}
+.top-button-link {
+    text-decoration: none;
+    /* position: relative; */
+
+    font-size: 2rem;
     color: white;
     -webkit-text-stroke: 1.5px black; 
+}
+.top-button-text {
+
 }
 
 /*========= image - glasses =========*/
 .image {
     width: fit-content;
     margin: auto;
-
-    /* border: 1px solid red; */
-
-    /* display: none; */
 }
 .image img {
     width: 100%;
@@ -123,7 +135,7 @@ main {
 
 /*========= about =========*/
 .about {
-    width: 40vw;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,8 +143,14 @@ main {
 
     /* display: none; */
 }
+.about-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 .about-title {
-    /* margin-bottom: -1.3rem; */
 }
 .about-image {
     width: fit-content;
@@ -144,46 +162,37 @@ main {
 }
 .about-text {
     line-height: 2;
+    width: 70%;
 }
 /*========= end about =========*/
 
 /*========= work =========*/
 .work {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: 1px solid green; */
-    /* display: none; */
 }
 .work-title {
-    /* border: 1px solid green; */
 }
 .project-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3vw;
-
-    /* border: 1px solid black; */
 }
 .projects {
     height: 15vh;
     border-radius: 5%;
-
-    /* border: 1px solid red; */
 }
 .projects img {
     width: 100%;
     border-radius: 5%;
 }
 .project-1 {
-    /* flex-grow: 2; */
-    /* background-image: url('../images/horiseon.png');
-    background-size: cover; */
     height: fit-content;
+    position: relative;
 }
 
 .small-projects-1,.small-projects-2 {
@@ -200,86 +209,47 @@ main {
     border: 1px solid black;
     width: 130px;
     flex-grow: 1;
-    /* background-color: #CACACA; */
-}
-.project-2, .project-3 {
-    /* flex-grow: 1; */
 }
 .coming-soon {
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.project-1-text {
 }
 .coming-soon-text {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 	-webkit-text-stroke: 1.5px black;
-    text-align: center;
 }
-.projects:hover {
-    /* border: 3px solid aqua; */
+.large-project:hover {
     opacity: 0.5;
 }
 .coming-soon:hover {
     background-color: #CACACA;
 }
-
-/* .projects-fb {
-    display: flex;
-}
-.projects {
-}
-.project-1 {
-}
-.project-1 img {
-    width: 100%;
-    height: 100%;
-}
-.project-2, .project-3 {
-    flex-basis: 48%;
-}
-.project-4,
-.project-5,
-.project-6 {
-    flex-basis: 31%;
-}
-
-.coming-soon {
-    border: 1px solid black;
-}
-.coming-soon-text {
-    color: white;
-    font-size: 2vw;
-	-webkit-text-stroke: 1.5px black;
-    text-align: center;
-} */
 /*========= end work =========*/
 
 /*========= contact =========*/
 .contact {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    width: 30vw;
-    justify-content: center;
-    margin: auto; */
-
-    /* border: 1px solid pink; */
-    /* display: none; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40vw;
 }
-.contact-title {
-
-}
+.contact-title {}
 .contact-icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-    width: 30vw;
+    gap: 50px;
+    width: 100%;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 .contact .icons {
@@ -290,7 +260,6 @@ main {
     width: 100%;
 }
 /*========= end contact =========*/
-
 /*========= end main =========*/
 
 /*========= start footer =========*/
@@ -310,18 +279,6 @@ footer p {
     text-align: center;
 }
 /*========= end footer =========*/
-
-@media screen and (max-width: 1320px) {
-    .projects-fb {
-    }
-    .projects {
-        /* flex-basis: 100%; */
-    }
-}
-@media screen and (max-width: 1000px) {
-    .contact {
-    }
-}
 @media screen and (min-width: 0) and (max-width: 760px) {
     header nav ul {
         flex-direction: column;
