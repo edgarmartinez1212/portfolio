@@ -19,12 +19,10 @@ header h1, header a {
 	font-size: 40px;
     font-size:calc(10vw + 2vw);
 	-webkit-text-stroke: 2px black;
- }
-header h1 {
-    /* margin: 0;
-    width: 85vw; */
 }
-header h1  {
+
+/* name edgar martinez */
+header h1 {
     margin: 0;
     width: 85vw;
     display: flex;
@@ -36,6 +34,8 @@ header h1  {
 .fname {
     margin-right: 15px;
 }
+
+/* navigation */
 header nav {
     width: 60vw;
 }
@@ -45,32 +45,19 @@ header nav ul {
     justify-content: center;
     padding: 0;
 }
-header nav ul li {
+header nav ul .tabs {
     list-style: none;
-    margin: 10px;
+    margin: 5px;
 }
-header nav ul li a {
+header nav ul .tabs a {
     font-size:calc(5vw + 2vw);
 }
-header button {
-    background-color: white;
-    border: none;
-}
-header h1 a:hover, header nav a:hover {
+
+/* navigation turns gray when hovering */
+header nav a:hover {
     color: #CACACA;
     -webkit-text-stroke: 2px #CACACA;
 }
-.top-button-text:hover {
-    /* background-color: #CACACA; */
-    color: #CACACA;
-    -webkit-text-stroke: 2px #CACACA;
-    /* border: 1px solid #CACACA; */
-}
-/* unsure of focus */
-/* header nav ul li a:focus, header h1 a:focus { 
-    color: #999999;
-    -webkit-text-stroke: 2px black;
-} */
 /*========= end header =========*/
 
 /*========= start main =========*/
@@ -80,25 +67,17 @@ main {
     justify-content: center;
     align-items: center;
     gap: 4vh;
-
-    /* border: 1px solid black; */
 }
 
 /*========= top button =========*/
+/* text will return user to top of page */
 .top-button {
-    /* font-size: 2rem; */
     position: fixed;
     bottom: 20px;
     right: 20px;
-
-    /* height: 10vh; */
-    /* width: 10vh; */
-    /* border-radius: 50%; */
-    /* border: 1.5px solid black; */
 }
 .top-button-link {
     text-decoration: none;
-    /* position: relative; */
 }
 .top-button-text {
     font-size: 2.5rem;
@@ -106,18 +85,26 @@ main {
     -webkit-text-stroke: 1.5px black; 
     text-align: center;
 }
+/* text turns gray when hovering */
+.top-button-text:hover {
+    color: #CACACA;
+    -webkit-text-stroke: 2px #CACACA;
+}
+/*========= end top-button =========*/
 
-/*========= image - glasses =========*/
-.image {
+/*========= start glasses-image =========*/
+/* glasses image */
+.glasses-image {
     width: fit-content;
     margin: auto;
 }
-.image img {
+.glasses-image img {
     width: 100%;
 }
-/*========= end image - glasses =========*/
+/*========= end glasses-image =========*/
 
 /*========= subheadings =========*/
+/* about, work, contact headings */
 .subheading {
     font-size: 2rem;
     color: white;
@@ -127,22 +114,18 @@ main {
 
 /*========= about =========*/
 .about {
-    width: 60vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-
-    /* display: none; */
 }
 .about-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 3vw;
     justify-content: center;
     align-items: center;
-}
-.about-title {
 }
 .about-image {
     width: fit-content;
@@ -154,7 +137,7 @@ main {
 }
 .about-text {
     line-height: 2;
-    width: 70%;
+    width: 60%;
 }
 /*========= end about =========*/
 
@@ -166,8 +149,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-.work-title {
-}
 .project-container {
     width: 100%;
     display: flex;
@@ -177,6 +158,16 @@ main {
 .projects {
     height: 15vh;
     border-radius: 5%;
+}
+.projects a {
+    
+    /* border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    -webkit-text-stroke: 1.5px black; */
 }
 .projects img {
     width: 100%;
@@ -202,7 +193,9 @@ main {
     width: 130px;
     flex-grow: 1;
 }
+/* projects coming soon boxes */
 .coming-soon {
+    text-decoration: none;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -211,12 +204,9 @@ main {
     gap: 10px;
     -webkit-text-stroke: 1.5px black;
 }
-.project-1-text {
-}
 .coming-soon-text {
     color: white;
     font-size: 1.5rem;
-	/* -webkit-text-stroke: 1.5px black; */
     text-align: center;
 }
 .large-project:hover {
@@ -240,7 +230,6 @@ main {
     align-items: center;
     width: 40vw;
 }
-.contact-title {}
 .contact-icons {
     display: flex;
     flex-direction: row;
@@ -278,24 +267,19 @@ footer p {
     text-align: center;
 }
 /*========= end footer =========*/
+
+/* media  */
 @media screen and (min-width: 0) and (max-width: 760px) {
     header nav ul {
-        flex-direction: column;
+         flex-direction: column;
         align-items: center;
-        padding: 0;
-    }
-    header nav ul li {
     }
     header nav ul li a {
         font-size:calc(5vw + 5vw);
-        transform: rotate(90deg);
-    }
-    img{
     }
     .about-text {
         line-height: 1.5;
     }
-    
     footer {
         font-size: 10vw;
         word-spacing: 5px;
