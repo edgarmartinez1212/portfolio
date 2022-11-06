@@ -60,11 +60,11 @@ header h1 a:hover, header nav a:hover {
     color: #CACACA;
     -webkit-text-stroke: 2px #CACACA;
 }
-.top-button:hover {
-    background-color: #CACACA;
-    color: white;
-    -webkit-text-stroke: 2px white;
-    border: 1px solid #CACACA;
+.top-button-text:hover {
+    /* background-color: #CACACA; */
+    color: #CACACA;
+    -webkit-text-stroke: 2px #CACACA;
+    /* border: 1px solid #CACACA; */
 }
 /* unsure of focus */
 /* header nav ul li a:focus, header h1 a:focus { 
@@ -87,32 +87,24 @@ main {
 /*========= top button =========*/
 .top-button {
     /* font-size: 2rem; */
-    /* position: fixed; */
-    /* bottom: 20px; */
-    /* right: 20px; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 
-    height: 10vh;
-    width: 10vh;
+    /* height: 10vh; */
+    /* width: 10vh; */
     /* border-radius: 50%; */
-    border: 1.5px solid black;
-    
-    
-    
-
-
-    /* line-height:  */
-
+    /* border: 1.5px solid black; */
 }
 .top-button-link {
     text-decoration: none;
     /* position: relative; */
-
-    font-size: 2rem;
-    color: white;
-    -webkit-text-stroke: 1.5px black; 
 }
 .top-button-text {
-
+    font-size: 2.5rem;
+    color: white;
+    -webkit-text-stroke: 1.5px black; 
+    text-align: center;
 }
 
 /*========= image - glasses =========*/
